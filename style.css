@@ -39,6 +39,21 @@
     letter-spacing: 0.05rem;
   }
 
+  .section-title {
+    font-size: 4rem;
+    font-weight: 300;
+    color: #000;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+  .section-title span {
+    color: crimson;
+    font-weight: bolder;
+}
+
   /*Hero Section*/
   #hero {
       background-image: url(./img/hero.jpg);
@@ -142,27 +157,13 @@
       padding: 100px 0;
   }
 
-  #services .section-title {
-      font-size: 4rem;
-      font-weight: 300;
-      color: #000;
-      margin-bottom: 10px;
-      text-transform: uppercase;
-      letter-spacing: .2rem;
-      text-align: center;
-  }
-
-  #services .section-title span {
-      color: crimson;
-      font-weight: bolder;
-  }
-
   #services .service-top p {
       font-size: 1.4rem;
       margin-top: 5px;
       line-height: 2.5rem;
       font-weight: 300;
       letter-spacing: .05rem;
+      padding-left: 30px;
   }
 
   #services .service-bottom {
@@ -236,6 +237,70 @@
 
   /*End Service Section*/
 
+  /*Projects Section*/
+#projects .projects {
+    flex-direction: column;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#projects .project-header h1 {
+    margin-bottom: 50px;
+}
+
+#projects .all-projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#projects .project-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#projects .project-info {
+    padding: 30px;
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column; 
+    color: #EEEEEE;
+    background-color: hsl(355, 1%, 50%);
+}
+
+#projects .project-info h1 {
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+#projects .project-info h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #EEEEEE;
+}
+
+#projects .project-info p {
+    color: #EEEEEE;
+}
+
+#projects .project-img {
+    flex-basis: 50%;
+    height: 300px;
+    overflow: hidden;
+}
+  /*Projects Section End*/
 
   /*Keyframes*/
   @keyframes text_reveal_box {
