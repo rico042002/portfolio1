@@ -73,6 +73,16 @@
     background-color: crimson;
 }
 
+.brand h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #EEEEEE;
+}
+
+.brand h1 span {
+    color: crimson;
+}
+
   /*Hero Section*/
   #hero {
       background-image: url(./img/hero.jpg);
@@ -437,6 +447,53 @@
   }
   /*End Contact Info*/
 
+  /*Footer*/
+  #footer {
+      background-color: hsl(355, 1%, 50%);
+  }
+
+  #footer .footer {
+      min-height: 200px;
+      flex-direction: column;
+      padding-top: 50px;
+      padding-bottom: 10px;
+  }
+
+  #footer h2 {
+      color: #EEEEEE;
+      font-weight: 500;
+      font-size: 1.8rem;
+      letter-spacing: .1rem;
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+
+  #footer .social-icon {
+      display: flex;
+      margin-bottom: 30px;
+  }
+
+  #footer .social-item {
+      height: 110px;
+      width: 110px;
+      margin: 0 5px;
+  }
+
+  #footer .social-item img {
+      filter: grayscale(1);
+      transition: .3s ease filter;
+  }
+
+  #footer .social-item img:hover {
+      filter: grayscale(0);
+  }
+
+  #footer p {
+      color: #EEEEEE;
+  }
+
+  /*End Footer*/
+
   /*Keyframes*/
   @keyframes text_reveal_box {
       50% {
@@ -462,3 +519,23 @@
     }
 }
   /*End Keyframes*/
+
+  /*Media Queries*/
+  /*Tablet*/
+  @media only screen and (min-width:768px) {
+      .cta {
+          font-size: 2.5rem;
+          padding: 20px 60px;
+          margin-bottom: 15px;
+      }
+
+      h1 .section-title{
+          font-size: 6rem;
+      }
+      /*hero*/
+      #hero h1 {
+          font-size: 7rem;
+      }
+
+      /*end hero*/
+  }
