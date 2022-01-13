@@ -702,10 +702,6 @@
         flex-basis: 75%;
         margin: 2.5%;
       }
-
-      .service-item h2 {
-          text-align: center;
-      }
       /*End Service*/
 
       /*projcect*/
@@ -844,3 +840,9 @@
     }
  }
   /*End Media Query for desktop*/
+
+  @media screen and (min-width: 375px) {
+    .service-item h2 {
+        margin-right: 30px;
+    }
+  }
