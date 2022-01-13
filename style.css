@@ -702,6 +702,10 @@
         flex-basis: 75%;
         margin: 2.5%;
       }
+
+      .service-item h2 {
+          text-align: center;
+      }
       /*End Service*/
 
       /*projcect*/
