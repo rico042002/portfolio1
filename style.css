@@ -99,7 +99,7 @@
     transition: .3s ease background-color;
 }
 
-#header .nav-bar {
+#header #navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -228,15 +228,18 @@
 /*End Header */
 
   /*Hero Section*/
-  #hero {
+  #welcome-section {
       background-image: url(./img/hero.jpg);
       background-size: cover;
       background-position: top center;
       position: relative;
       z-index: 1;
+      display: flex;
+      height: 100vh;
+      width: 100%;
   }
 
-  #hero::after { /*Hero Overlay*/
+  #welcome-section::after { /*Hero Overlay*/
       content: '';
       position: absolute;
       left: 0;
@@ -248,14 +251,14 @@
       z-index: -1;
   }
 
-  #hero .hero {
+  #welcome-section .hero {
       max-width: 1200px;
       margin: 0 auto;
       padding: 0 50px;
       justify-content: flex-start;
   }
 
-  #hero h1 {
+  #welcome-section h1 {
       display: block;
       width: fit-content;
       font-size: 4rem;
@@ -265,20 +268,20 @@
       animation-delay: 1s;
   }
 
-  #hero h1:nth-child(1) {
+  #welcome-section h1:nth-child(1) {
       animation-delay: 1s;
   }
 
-  #hero h1:nth-child(2) {
+  #welcome-section h1:nth-child(2) {
       animation-delay: 2s;
   }
 
-  #hero h1:nth-child(3) {
+  #welcome-section h1:nth-child(3) {
       animation: text_reveal_name .5s ease forwards;
       animation-delay: 3s;
   }
 
-  #hero h1 span {
+  #welcome-section h1 span {
       position: absolute;
       top: 0;
       left: 0;
@@ -289,15 +292,15 @@
       animation-delay: .3s;
   }
 
-  #hero h1:nth-child(1) span {
+  #welcome-section h1:nth-child(1) span {
       animation-delay: .5s;
   }
 
-  #hero h1:nth-child(2) span {
+  #welcome-section h1:nth-child(2) span {
       animation-delay: 1.5s;
   }
 
-  #hero h1:nth-child(3) span {
+  #welcome-section h1:nth-child(3) span {
       animation-delay: 2.5s;
   }
 
@@ -692,7 +695,7 @@
           font-size: 6rem;
       }
       /*hero*/
-      #hero h1 {
+      #welcome-section h1 {
           font-size: 5rem;
       }
       /*end hero*/
@@ -843,6 +846,6 @@
 
   @media screen and (min-width: 375px) {
     .service-item h2 {
-        margin-right: 30px;
+        margin-right: px;
     }
   }
