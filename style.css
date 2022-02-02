@@ -10,6 +10,7 @@
       font: 10px;
       font-family: 'Montserrat', sans-serif;
       scroll-behavior: smooth;
+      height: 100vh;
   }
 
   a {
@@ -844,6 +845,7 @@
 
   @media screen and (min-width: 375px) {
     .service-item h2 {
-        margin-right: px;
+        padding-right: 50px;
     }
   }
+
