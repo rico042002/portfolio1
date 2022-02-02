@@ -10,7 +10,6 @@
       font: 10px;
       font-family: 'Montserrat', sans-serif;
       scroll-behavior: smooth;
-      box-sizing: border-box;
   }
 
   a {
@@ -236,7 +235,6 @@
       position: relative;
       z-index: 1;
       height: 100vh;
-      width: auto;
   }
 
   #welcome-section::after { /*Hero Overlay*/
