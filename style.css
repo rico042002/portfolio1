@@ -235,7 +235,7 @@
       background-position: top center;
       position: relative;
       z-index: 1;
-      height: 100vh;
+      height: calc(100vh + 8.2vh);
   }
 
   #welcome-section::after { /*Hero Overlay*/
