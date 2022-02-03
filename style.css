@@ -843,7 +843,7 @@
  }
   /*End Media Query for desktop*/
 
-  @media screen and (min-width: 375px) { /*Iphone SE*/
+  @media screen and (max-width: 375px) { /*Iphone SE*/
     .service-item h2 {
         padding-right: 50px;
     }
@@ -853,7 +853,7 @@
     }
   }
 
-  @media screen and (min-width: 414px) { /*Iphone XR*/
+  @media screen and (max-width: 414px) { /*Iphone XR*/
     .service-item h2 {
         padding-right: 50px;
     }
@@ -863,7 +863,7 @@
     }
   }
 
-  @media screen and (min-width: 390px) { /*Iphone 12 Pro*/
+  @media screen and (max-width: 390px) { /*Iphone 12 Pro*/
     .service-item h2 {
         padding-right: 50px;
     }
@@ -873,7 +873,7 @@
     }
   }
 
-  @media screen and (min-width: 393px) { /*Pixel 5*/
+  @media screen and (max-width: 393px) { /*Pixel 5*/
     .icon h2 {
         margin-right: 85px;
     }
