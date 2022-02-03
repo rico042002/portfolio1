@@ -235,7 +235,7 @@
       background-position: top center;
       position: relative;
       z-index: 1;
-      height: calc(100vh + 8.2vh);
+      height: 100vh;
   }
 
   #welcome-section::after { /*Hero Overlay*/
@@ -843,9 +843,42 @@
  }
   /*End Media Query for desktop*/
 
-  @media screen and (min-width: 375px) {
+  @media screen and (min-width: 375px) { /*Iphone SE*/
     .service-item h2 {
         padding-right: 50px;
     }
+
+    #welcome-section {
+       height: calc(100vh + 14vh);
+    }
   }
 
+  @media screen and (min-width: 414px) { /*Iphone XR*/
+    .service-item h2 {
+        padding-right: 50px;
+    }
+
+    #welcome-section {
+       height: calc(100vh + 8.2vh);
+    }
+  }
+
+  @media screen and (min-width: 390px) { /*Iphone 12 Pro*/
+    .service-item h2 {
+        padding-right: 50px;
+    }
+
+    #welcome-section {
+       height: calc(100vh + 11.8vh);
+    }
+  }
+
+  @media screen and (min-width: 393px) { /*Pixel 5*/
+    .icon h2 {
+        margin-right: 85px;
+    }
+
+    #welcome-section {
+       height: calc(100vh + 11.1vh);
+    }
+  }
